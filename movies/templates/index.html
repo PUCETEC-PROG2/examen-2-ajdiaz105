@@ -7,15 +7,16 @@
     <body>
         <div class="container">
             <div class="bg-primary text-white p-4 text-center">
-                <h1>Movies</h1>s
-            <ul class="list-group">
-                {% for movie in movies %}
-                <li class="list-group-item">
-                    <a href="movie/{{movie.id}}">{{ movie | capfirst }}</a>
-                    <p>{{movie.generous}}</p>
-                </li>
-                {% endfor %}
-            </ul>
+                <h1>Movies</h1>
+            </div>
+                <ul class="list-group">
+                    {% for movie in movies %}
+                    <li class="list-group-item">
+                        <a href="movie/{{movie.id}}">{{ movie.title | capfirst }}</a>
+                        <p>{{movie.year}}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
         </div>
     </body>
 </html>

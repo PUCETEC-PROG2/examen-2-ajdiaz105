@@ -9,8 +9,7 @@
             <div class="bg-primary text-white p-4 text-center">
                 <h1>Pelicula</h1>
             </div>
-            <p>Has elegido la pelicula : <strong>{{ movie | capfirst }}</strong></p>
-            <h3>Caracteristicas :</h3>
+            <h3><strong>{{ movie.title | capfirst }}</strong></h3>
             <ul class="ist-group list-group-flush">
                 <li class="list-group-item">Año : {{movie.year}}</li>
                 <li class="list-group-item">Director : {{movie.name}} kg</li>
